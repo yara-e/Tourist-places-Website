@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia</title>
+    <!-- <script src="main.js"></script>-->
+
+    <style>
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 0 70px;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        header ul li a:hover,
+        header ul li a.num1 {
+            background: #fff;
+            color: #131241
+        }
+
+        body {
+            background-color: rgb(0, 56, 75);
+
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            position: relative;
+        }
+
+
+        .mySlides {
+            display: none;
+        }
+
+
+        .cursor {
+            cursor: pointer;
+        }
+
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+
+        .caption-container {
+            text-align: center;
+            background-color: rgb(1, 55, 71);
+            padding: 2px 16px;
+            color: white;
+            font-size: x-large;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+
+
+        .demo {
+            opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="logo">Tall tale travel</a>
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="countries.html">discover</a></li>
+
+            <li><a href="aboutus.html" class="num1">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </header>
+    <!-- Container  -->
+    <div class="container">
+
+        <!--img / number -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="7.jpg" style="width:100%">
+        </div>
+
+        <!-- buttons -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!--  images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(1)"
+                    alt="Australia Melbourne Star Observation Wheel">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(2)"
+                    alt="Opera House ,Sydney">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Brisbane">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)"
+                    alt="Uluru, Petermann">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="5.jpg" style="width:100%" onclick="currentSlide(5)"
+                    alt="Blairgowrie Vic ">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="7.jpg" style="width:100%" onclick="currentSlide(6)"
+                    alt="Flinders Street Station">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HOME </title>
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <style>
+        @import url('http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+            background: linear-gradient(#131241, #41125A);
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        header ul li a:hover,
+        header ul li a.num1 {
+            background: #fff;
+            color: #131241
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, #131241, #201920, transparent);
+            z-index: 1000;
+        }
+
+        section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+
+        section img #towers {
+            z-index: 10;
+        }
+
+        #text {
+            position: absolute;
+            color: #fff;
+            white-space: nowrap;
+            font-size: 7.5vw;
+            z-index: 9;
+            transform: translateY(-100px);
+        }
+
+        #bot {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 30px;
+            border-radius: 40px;
+            background: #fff;
+            color: #131241;
+            font-size: 1.5em;
+            z-index: 9;
+            transform: translateY()
+        }
+
+        .sec {
+            position: relative;
+            padding: 100px;
+            background: #131241;
+        }
+
+        .sec h2 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .sec p {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="home.html" class="logo">Tall tale travel</a>
+        <ul>
+            <li><a href="home.html" class="num1">home</a></li>
+            <li><a href="countries.html">discover</a></li>
+
+            <li><a href="aboutus.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="all.jpg" id="all">
+        <img src="towers.png" id="towers">
+        <h2 id="text">Tall Tale Travel</h2>
+        <a href="#sec" id="bot">Discover</a>
+        <img src="camel2.png" id="camel2">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Discover</h2>
+        <p> Here you can find what you need about tourist attractions wee have alot of places for different tourism type
+            <br><br>Types:<br><br> Places of natural beauty such as beaches, tropical island resorts, national parks,
+            mountains, deserts and forests, are examples of traditional tourist attractions which people may visit.
+            Cultural tourist attractions can include historical places, monuments, ancient temples, zoos, aquaria,
+            museums and art galleries, botanical gardens, buildings and structures (such as forts, castles, libraries,
+            former prisons, skyscrapers, bridges), theme parks and carnivals, living history museums, public art
+            (sculptures, statues, murals), ethnic enclave communities, historic trains and cultural events. Factory
+            tours, industrial heritage, creative art and crafts workshops are the object of cultural niches like
+            industrial tourism and creative tourism. Many tourist attractions are also landmarks. But sports events such
+            as a soccer game, Formula 1 race or sailing regatta can also attract tourists.<br><br> Tourists'
+            expectations when visiting a particular place are related to several features of the chosen destination:
+            culture, architecture, gastronomy, infrastructure, landscape, events, shopping, etc. These features attract
+            people to the destination and contribute to the overall experience of the trip. The ultimate primary purpose
+            of attractions is to attract the customer's attention so that they can come to a specific location and
+            explore the various attractions on vacation. In the travel and tourism industry, attractions therefore play
+            a particularly important role as this attracts tourists from all over the world.<br><br>
+            Tourist attractions are also created to capitalize on legends such as a supposed UFO crash site near
+            Roswell, New Mexico and the alleged Loch Ness monster sightings in Scotland. Ethnic communities may become
+            tourist attractions, such as Chinatowns in the United States and the black British neighborhood of Brixton
+            in London, England. Tourists also look for special local culinary experiences such as street kitchens in
+            Asian metropolises or the coffeehouse culture in Central Europe. In particular, cultural property and the
+            individual places of the UNESCO World Heritage Site have developed into tourist attractions. If too many
+            tourists frequent individual places, this can lead to environmental pollution and resistance from the local
+            population, such as in Barcelona or Venice. With regard to this whole subject, there are already lists of
+            destinations that are not recommended to tourists<br><br>
+            There are innumerable lists and reviews of tourist attractions. Visitor statistics, cultural significance,
+            beauty or age are used and these always reflect the author's personal assessments. Sometimes it is
+            particularly emphasized that this particular tourist attraction has not yet been in the focus of the
+            international tourism industry. Some of the sights are internationally known or target the national or local
+            market. Some attractions are reserved for the local population or are rarely advertised because the main
+            traffic routes and main airports are too far away.<br><br>
+            In the United States, owners and marketers of attractions advertise tourist attractions on billboards along
+            the sides of highways and roadways, especially in remote areas. Tourist attractions often distribute free
+            promotional brochures to be displayed in rest areas, information centers, fast food restaurants, and motel
+            rooms or lobbies.<br><br>
+            While some tourist attractions provide visitors a memorable experience for a reasonable admission charge or
+            even for free, others may be of low quality and overprice their goods and services (such as admission, food,
+            and souvenirs) in order to profit excessively from tourists. Such places are commonly known as tourist traps
+            Within cities, rides on boats and sightseeing buses are sometimes popular.
+        </p>
+    </div>
+    <script>
+        let all = document.getElementById('all');
+        let towers = document.getElementById('towers');
+        let header = document.querySelector('header');
+        let bot = document.querySelector('bot');
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            all.style.top = value * 0.25 + 'px';
+            towers.style.top = value * 0.4 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <style>
+        @import url('http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%display=swap');
+
+
+        .header {
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            min-height: 100px;
+            overflow-x: hidden;
+
+        }
+
+        .header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        .header ul li a:hover,
+        .header ul li a.num1 {
+            background: #fff;
+            color: #131241
+        }
+
+        body {
+            background: linear-gradient(#131241, #41125A);
+            margin: 0;
+        }
+
+        #firstletter {
+
+            margin-left: 600px;
+            color: goldenrod;
+            margin-top: 35px;
+            font-family: Arial;
+            font-size: 50px;
+        }
+
+        #antar {
+
+            color: white;
+            margin-top: 35px;
+            font-family: Arial;
+            font-size: 40px;
+        }
+
+        #div1 {
+            float: left;
+            margin-right: 150px;
+            padding-bottom: 110px;
+        }
+
+        #div2 {
+            padding-bottom: 110px;
+
+        }
+
+        .adiv {
+            background-color: white;
+            margin-left: 150px;
+            height: 400px;
+            width: 500px;
+
+            margin-top: 50px;
+            filter: grayscale(100%);
+            overflow: hidden;
+            border: solid goldenrod 10px;
+            border-radius: 5px;
+        }
+
+        .adiv:hover {
+            filter: grayscale(0%);
+            margin-bottom: 50px;
+        }
+
+
+        .aimg {
+            height: 250px;
+            width: 100%;
+
+
+            margin-bottom: 0;
+        }
+
+        .nplace {
+            font-size: 30px;
+            color: goldenrod;
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 10px;
+        }
+
+        .place {
+            font-size: 17px;
+            font-family: Arial;
+            margin-top: 10px;
+            color: rgb(2, 2, 36);
+            margin-left: 10px;
+
+        }
+
+        #remark {
+            color: #131241;
+            background-color: darkgoldenrod;
+            border-radius: 5px;
+            margin-left: 150px;
+            margin-right: 300px;
+            margin-top: 50px;
+            padding-left: 10px;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <a href="home.html" class="logo">Tall Tale travel </a>
+        <ul>
+            <li> <a href="home.html" class="num1">home</a></li>
+            <li> <a href="countries.html">discover</a></li>
+
+            <li> <a href="aboutus.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+
+    </div>
+    <div class="heading">
+        <span id="firstletter"> A</span>
+        <span id="antar">ntarctica </span>
+    </div>
+    <div id="remark"> Hover on the place you want to know more about it </div>
+    <div id="div1">
+        <div class="adiv" onmouseover="big(this)" onmouseout="normal(this)">
+            <img class="aimg" src="sSouth-Shetland-Islands.jpg">
+            <p class="nplace">South Shetland Islands</p>
+            <P class="place">The spectacular South Shetland Island is one of the most visited sites in Antarctica. The
+                island is completely covered in ice and is home to some of the most incredible fjords and glaciers.
+                The rocky coastlines, on the other hand, are inhabited by elephant seals and penguins. Eight distinct
+                countries maintain research stations on the islands all year round, with the majority of the stations
+                being
+                located on King George Island. Some of the other well-known islands include Deception Island, which is
+                widely popular for being a collapsed yet active volcanic cone.Situated at a distance of 160km north of
+                the
+                Antarctic Peninsula,
+                the spectacular South Shetland Island is one of the most visited sites in Antarctica.</P>
+        </div>
+        <div class="adiv" onmouseover="big(this)" onmouseout="normal(this)">
+            <img class="aimg" src="Antarctic_Peninsula.jpg">
+            <P class="nplace"> Antarctic Peninsula</P>
+            <P class="place">This is the northernmost part of Antarctica
+                and is home to a large array of polar wildlife. It comprises
+                iceberg strewn waterways along with narrow passages which are frequented by expedition cruises with
+                landings
+                made on natural harbours and outlying islands of the Antarctic Peninsula.
+                Tourists visit the peninsula for the breathtaking scenery with a combination of expansive skies,
+                towering
+                glaciers. Apart from being a visual treat to the eyes, the place is also popular
+                for penguin rookeries along with cormorant colonies. The migration season offers varied opportunities to
+                spot Minke, humpback and killer whales at closer proximity. </P>
+        </div>
+
+
+        <div class="adiv" onmouseover="big(this)" onmouseout="normal(this)">
+            <img class="aimg" src="South_Georgia.jpg">
+            <P class="nplace"> South Georgia</P>
+            <P class="place"> South Georgia boasts a narrow and long island that is referred to as the Alps located in
+                the
+                mid-ocean. Thanks to the rising
+                mountains covering much of the land mass, the Alps are named so. Enjoy the most picturesque parts of the
+                place with the low-lying grasslands, mighty glaciers
+                along with dramatic fjords. With these in abundance, it is undoubtedly one of the most visited sites in
+                the
+                region. The place is widely visited due to the beaches
+                that are thrived by penguin colonies and seals. The photogenic remains of whaling stations along with
+                the
+                relics make the place a visit-worthy. With the ease of landing on the island, tourism has become
+                increasingly popular.</P>
+        </div>
+        <div class="adiv" onmouseover="big(this)" onmouseout="normal(this)">
+            <img class="aimg" src="Lemaire_Channel.jpg">
+            <P class="nplace">Lemaire Channel</P>
+            <P class="place"> A trip to Antarctica is incomplete without cruising along the stunning Lemaire Channel.
+                Glaciers, icebergs and sheer cliffs dominate the area
+                which lies above the water. With these wonderful creations lying above, humpback whales and behemoths
+                lie below. While on your expedition to this gorgeous place,
+                keep an eye out for orcas as well. The channel is completely precarious with being 1600m narrow and
+                having plenty of loose icebergs. A heaven for the photographers, the scenery offers a breathtaking
+                mirror view which is almost a dream to the photographers.</P>
+        </div>
+
+
+        <div class="adiv" onmouseover="big(this)" onmouseout="normal(this)">
+            <img class="aimg" src="Port_Lockroy.jpg">
+            <P class="nplace"> Port Lockroy</P>
+            <P class="place"> A natural harbour located on the north-western shore of Wiencke island is one of the most
+                popular places to visit. The tourist spot makes way for being one of the most popular tourist
+                destinations for a large array of cruise-ship passengers in Antarctica.
+                This is a natural harbour that was originally used for whaling and then in the form of a military base
+                during the time of the Second World War. This was soon followed by the place being used as a research
+                station. The port is now a historic site consisting of post office and
+                museum with being a popular halt point for travellers exploring Antarctica. Half of Wiencke Island is
+                now closed for the tourists as only penguins are allowed to thrive.</P>
+        </div>
+    </div>
+    <div id="div2">
+        <div class="adiv" onmouseover="big(this)" onmouseout="normal(this)">
+            <img class="aimg" src="dark passage.jpg">
+            <P class="nplace"> Drake Passage</P>
+            <P class="place"> The Drake Passage is an infamous stretch of water. It connects the Atlantic and Pacific
+                oceans, passing between the southernmost point of Argentina and the northern tip of the Antarctic
+                Peninsula. Named after the famous English explorer Sir Francis Drake, the passage is
+                renowned for its strong winds and brutal weather conditions. It's not for the fainthearted and
+                seasickness is always a possibility, but it's the only way to navigate to Antarctica from South America.
+                Plus, the marvellous open views of rolling ocean and icebergs is worth the journey.</P>
+        </div>
+
+        <div class="adiv" onmouseover="big(this)" onmouseout="normal(this)">
+            <img class="aimg" src="blood falls.jpg">
+            <P class="nplace">Blood Falls</P>
+            <P class="place"> Blood Falls is an outflow of an iron oxide-tainted plume of saltwater, flowing from the
+                tongue of Taylor Glacier onto the ice-covered surface of West Lake Bonney in the Taylor Valley of the
+                McMurdo Dry Valleys in Victoria Land, East Antarctica. Iron-rich hypersaline water sporadically
+                emerges from small fissures in the ice cascades. The saltwater source is a subglacial pool of unknown
+                size overlain by about 400 metres of ice several kilometers from its tiny outlet at Blood Falls. The
+                reddish deposit was found in 1911 by the Australian geologist Griffith Taylor, who first explored the
+                valley that bears his name.
+                The Antarctica pioneers first attributed the red color to red algae, but later it was proven to be due
+                to iron oxides. </P>
+        </div>
+        <div class="adiv" onmouseover="big(this)" onmouseout="normal(this)">
+            <img class="aimg" src="Mount Erebus.jpg">
+            <P class="nplace"> Mount Erebus</P>
+            <P class="place"> Mount Erebus is an active volcano, the second-highest in Antarctica and the southernmost
+                active volcano on Earth. It is the sixth-highest ultra mountain on the continent. With a summit
+                elevation of 3,794 metres, it is located in the Ross Dependency on Ross Island, which is also home to
+                three inactive volcanoes: Mount Terror,
+                Mount Bird, and Mount Terra Nova. The volcano has been active since about 1.3 million years ago and has
+                a long lived lava lake in its inner summit crater that has been present since at least the early 1970's.
+                The volcano was the site of the Air New Zealand Flight 901 accident, which occurred in November 1979.
+            </P>
+        </div>
+
+        <div class="adiv" onmouseover="big(this)" onmouseout="normal(this)">
+            <img class="aimg" src="mcmurdo.jpg">
+            <P class="nplace"> McMurdo Sound </P>
+            <P class="place"> McMurdo Sound and its ice-clogged waters extends about 55 kilometres long and wide. The
+                sound connects the Ross Sea to the north with the Ross Ice Shelf cavity to the south via Haskell Strait.
+                The strait is largely covered by the McMurdo Ice Shelf. The Royal Society Range rises from sea level to
+                4,205 metres on the western shoreline.
+                Ross Island, an historic jumping-off point for polar explorers, designates the eastern boundary. The
+                active volcano Mount Erebus at 3,794 metres dominates Ross Island. Antarctica's largest scientific base,
+                the United States' McMurdo Station, as well as the New Zealand Scott Base are on
+                the southern shore of the island. Less than 10 percent of McMurdo Sound's shoreline is free of ice.
+            </P>
+        </div>
+        <div class="adiv" onmouseover="big(this)" onmouseout="normal(this)">
+            <img class="aimg" src="vinson massif.jpg">
+            <p class="nplace"> Vinson Massif</p>
+            <P class="place"> It overlooks the Ronne Ice Shelf near the base of the Antarctic Peninsula. The massif is
+                located about 1,200 kilometres from the South Pole. Vinson Massif was discovered in January 1958 by U.S.
+                Navy aircraft. In 1961, the Vinson Massif was named by the Advisory Committee on Antarctic Names, after
+                Carl G. Vinson, United States congressman from the state of Georgia, for his support for Antarctic
+                exploration. On November 1, 2006, US-ACAN declared Mount Vinson and Vinson Massif to be separate
+                entities. Vinson Massif lies within the Chilean claim under the Antarctic Treaty System. Mount Vinson is
+                the highest peak in Antarctica, at 4,892 metres.</P>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    function big(x) {
+        x.style.height = "500px";
+        x.style.width = "600px";
+    }
+    function normal(x) {
+        x.style.height = "400px";
+        x.style.width = "500px";
+    }
+</script>
+</body>

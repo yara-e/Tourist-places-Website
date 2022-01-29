@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+
+<head>
+
+    <style>
+        @import url('http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%display=swap');
+
+
+        .header {
+
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            min-height: 100px;
+            overflow-x: hidden;
+
+            background: #131241;
+
+        }
+
+        .header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        .header ul li a:hover,
+        .header ul li a.num1 {
+            background: #fff;
+            color: #131241
+        }
+
+        body {
+            background: #131241;
+            margin: 0;
+        }
+
+        #div2 {
+
+            border-radius: 5px;
+            background-color: darkgoldenrod;
+            height: 90px;
+            width: 900px;
+            padding-top: 0;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+
+
+        #p2 {
+            color: #131241;
+            padding-left: 10px;
+            padding-top: 20px;
+            font-size: 20px;
+
+
+        }
+
+        .name {
+            font-family: sans-serif;
+            color: darkgrey;
+            border-left: 6px solid darkgoldenrod;
+            font-size: 40px;
+            display: inline;
+            margin-bottom: 50px;
+        }
+
+        .img {
+            height: 200px;
+            width: 350px;
+            border-radius: 5px;
+        }
+
+        .div {
+            height: 600px;
+            width: 350px;
+            margin-left: 50px;
+            border-radius: 5px;
+            background-color: darkgray;
+            float: left;
+
+        }
+
+        .head {
+            font-size: 30px;
+            font-family: Arial;
+            color: #131241;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 10px;
+        }
+
+        .parag {
+            font-family: Arial;
+            font-size: 20px;
+            color: #131241;
+            padding-left: 10px;
+        }
+
+        .mydiv {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-top: 10px;
+            padding-right: 0px;
+            padding-bottom: 10px;
+            width: 1450px;
+            overflow-x: scroll;
+            background-color: #131241;
+
+        }
+
+        .mydiv::-webkit-scrollbar {
+            display: none;
+        }
+
+        .content {
+            width: 2950px;
+
+        }
+
+        .button1 {
+            background-color: grey;
+            opacity: 0.5;
+            color: white;
+            outline: none;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            margin-top: 300px;
+            font-size: 30px;
+            border: none;
+        }
+
+        .button2 {
+            background-color: grey;
+            opacity: 0.5;
+            color: white;
+            outline: none;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            margin-top: 300px;
+            font-size: 30px;
+            border: none;
+            margin-left: 1430px;
+            margin-right: 0px;
+        }
+
+        .content2 {
+            width: 2250px;
+        }
+
+        #A {
+            color: white;
+            margin-bottom: 0;
+            font-size: 60px;
+            font-family: 'Roboto';
+        }
+
+        #S {
+            color: goldenrod;
+            margin-left: 600px;
+            margin-bottom: 0;
+            font-size: 70px;
+            font-family: 'Roboto';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <a href="home.html" class="logo">Tall Tale travel </a>
+        <ul>
+            <li> <a href="home.html" class="num1">home</a></li>
+            <li> <a href="countries.html">discover</a></li>
+
+            <li> <a href="aboutus.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+
+    </div>
+
+    <div>
+        <P><span id="S"> S</span><span id="A">outh America</span></P>
+    </div>
+    <div id="div2">
+
+        <p id="p2"> Best places to visit in South America from rainforests to ancient archaeological sites ,
+            South America boast a variety of destination that appeal to all
+            types of travelers</p>
+    </div>
+    <br><br>
+    <span> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <P class="name">Barazil</P>
+    <br><br>
+
+    <button class="button1" id="slideLeft">
+        < </button>
+            <button type="button" class="button2" id="slideRight">></button>
+            <div id="mydiv" class="mydiv">
+
+                <div id="content" class="content">
+
+                    <div class="div">
+                        <img class="img " src="Rio_de_Janeiro.jpg">
+
+                        <P class="head">Rio de Janeiro</P>
+                        <P class="parag">Rio de Janeiro is probably the most famous city in brazil
+                            that is renowned for its beautiful beachessuch as copacabana and ipanema,and interesting
+                            landscape.
+                            By
+                            interesting landscape, I mean the Sugarloaf Mountain (Pão de Açúcar) that rises above the
+                            Atlantic
+                            Ocean on the peninsula and from which you can enjoy the spectacular view of the city. You
+                            can't even
+                            miss
+                            the 635-tonne statue of Jesus that overlooks the whole city from the altitude of 710 metres
+                            on Mount
+                            Corcovado. </P>
+
+                    </div>
+                    <div class=div>
+                        <img class="img" src="iguacu falls.jpg">
+                        <P class="head"> Iguaçu Falls</P>
+                        <P class="parag">At the point where Brazil, Paraguay, and Argentina meet, the Iguaçu river drops
+                            spectacularly in a semicircle of 247 waterfalls that thunder down into the gorge below.
+                            Just above the falls, the river is constricted to one-fourth of its usual width, making the
+                            force of
+                            the water even stronger.
+                            Some of the falls are more than 100 meters high and they cover such a broad area that you'll
+                            never
+                            see all of them at once, but you do get the
+                            broadest panorama from the Brazilian side. Catwalks and a tower give you different vibes
+                        </P>
+                    </div>
+
+                    <div class=div>
+                        <img class="img" src="salvador-pelourinho.jpg">
+                        <p class="head">Salvador's Pelourinho</p>
+                        <p class="parag">The Cidade Alta (Upper Town) of Brazil's former colonial capital has been named
+                            a
+                            UNESCO World Heritage site for its exceptional collection of 17th- and 18th-century
+                            colonial buildings, the finest such ensemble in South America.Called the Pelourinho, this
+                            old
+                            quarter is where you'll find Salvador's most beautiful churches and monasteries,
+                            built at a time when Brazil was the source of Portugal's riches, and the plentiful gold was
+                            lavished
+                            on the colony's religious buildings.</p>
+                    </div>
+
+                    <div class=div>
+                        <img class="img" src="art museums of sao paulo.jpg">
+                        <P class="head">Art Museums of Sao Paulo</P>
+                        <P class="parag">Sao Paulo holds some of the best collections of fine arts in Latin America, and
+                            the
+                            buildings in which they are housed are architectural landmarks as well. The Museu de Arte,
+                            MASP,
+                            displays the continent's most comprehensive collection of western art, with representative
+                            works by
+                            artists from the Renaissance through modern masters.There are 73 bronze sculptures by Degas
+                            and
+                            works by Renoir,
+                            Manet, Van Gogh, Matisse, Picasso, and Miró. </P>
+                    </div>
+
+                    <div class="div">
+                        <img class="img" src="belo-horizonte.jpg">
+                        <p class="head">Belo Horizonte </p>
+                        <P class="parag">The capital of the state of Minas Gerais gave the pre-eminent Brazilian
+                            architect Oscar
+                            Niemeyer his first commissions, and today, these early Niemeyer buildings draw tourists and
+                            fans of
+                            Modernist architecture to the city
+                            His first major work, which immediately set him apart from conventional architects, was the
+                            parabolic-curved Sao Francisco de Assis church, beside a lake in the Pampulha neighborhood.
+                            On the
+                            hillside above it </P>
+                    </div>
+
+                    <div class="div">
+                        <img class="img" src="bonito.jpg">
+                        <P class=" head">Bonito</P>
+                        <P class="parag">Lying in the southwest corner of Mato Grosso do Sul, the small city of Bonito
+                            is a
+                            great place to go in Brazil if you are looking to explore the gorgeous Pantanal region.
+                            While
+                            there’s not all that much to see or do in the town itself,
+                            it has long been the posterchild of sustainable ecotourism in Brazil.Awash with natural
+                            wonders ,
+                            the area surrounding Bonito is home to sparkling waterfalls, gushing rivers, and huge
+                            sinkholes and
+                            lake-filled caves that you can go swimming or snorkeling in.
+                        </P>
+                    </div>
+                    <div class="div">
+                        <img class="img" src="pantanal.jpg">
+                        <P class="head"> Pantanal</P>
+                        <P class="parag"> The Pantanal is the world’s largest and most diverse tropical wetland area.
+                            Due to its
+                            stunning scenery and incredible wildlife, the region is increasingly popular to visit,
+                            although its
+                            remote and watery nature does pose a few challenges.
+
+                            During the rainy season, around 80 percent of the floodplains are submerged, so the only way
+                            to get
+                            around is by plane or boat. It is worth it, however; the endless marshes and grasslands are
+                            home to
+                            an astounding array of fauna and flora.</P>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+
+            <span> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <P class="name">Argentina</P>
+            <br><br>
+            <button class="button1" id="left">
+                < </button>
+                    <button class="button2" id="right">></button>
+                    <div class="mydiv" id="divv">
+                        <div class="content2">
+                            <div class="div">
+                                <img class="img" src="Historic Córdoba Cathedral.jpg">
+                                <p class="head"> Historic Córdoba Cathedral</p>
+                                <P class="parag"> In central Argentina, a five-hour drive from Buenos Aires, Córdoba is
+                                    the country's second largest city and is often used as a stopover on trips into the
+                                    Andes. Most of the city's finest old buildings date back to the early colonial
+                                    period of the 16th century.
+
+                                    Explore the historical center of the city around Plaza San Martin, now a UNESCO
+                                    World Heritage Site. Here, you'll find the beautiful Cathedral of Córdoba.</P>
+                            </div>
+                            <div class="div">
+                                <img class="img" src="la boca.jpg">
+                                <P class="head"> La Boca</P>
+                                <P class="parag"> One of South America's most attractive cities (also one of the
+                                    largest), Buenos Aires is often the first glimpse of Argentina most visitors will
+                                    have before heading off to popular tourist destinations such as Patagonia.
+
+                                    But the smart ones will linger here and take in the many delightful museums and art
+                                    galleries housed in the splendid old colonial buildings spread across the city's
+                                    districts or barrios.Be sure to visit La Boca, Buenos Aires' most colorful
+                                    neighborhood.</P>
+                            </div>
+                            <div class="div">
+                                <img class="img" src="tierra-del-fuego-national-park.jpg">
+                                <P class="head"> Tierra del Fuego National Park</P>
+                                <P class="parag"> The 156,000-acre Tierra del Fuego National Park extends all the way
+                                    from Beagle Channel to the Chilean Border and northwards to Lago Kami. It's a
+                                    paradise for hikers, with trails for all experience levels.
+
+                                    Using the town of Ushuaia as a base, adventurers head out onto the park's hiking
+                                    trails or along the coastline to explore its dramatic scenery, which includes
+                                    everything from tall waterfalls, dense forests, and mountains, to beautiful
+                                    glacier-fed lakes such as Roca.
+                                </P>
+                            </div>
+                            <div class="div">
+                                <img class="img" src="perito-moreno.jpg">
+                                <P class="head"> Perito Moreno Glacier</P>
+                                <P class="parag"> The main hub for tourists visiting the UNESCO World Heritage Site of
+                                    Patagonia's Los Glaciares National Park, the small town of El Calafate offers plenty
+                                    of accommodation options and other amenities for visitors.
+
+                                    It's here that most visitors join excursions to see the park's popular glaciers,
+                                    most notably the stunning Perito Moreno Glacier, a massive 30-kilometer-long ice
+                                    formation (and the world's third largest freshwater reserve) just 78 kilometers from
+                                    the town center.</P>
+                            </div>
+                            <div class="div">
+                                <img class="img" src="beaches-mar-del-plata.jpg">
+                                <P class="head"> Beaches of Mar del Plata </P>
+                                <P class="parag"> Some of the best beaches in South America are in the relatively modern
+                                    city of Mar del Plata, on the Atlantic coast 400 kilometers from Buenos Aires. Here,
+                                    the beautiful beaches sprawl for more than eight kilometers of coast that's also
+                                    marked by windswept dunes and dramatic cliffs.
+
+                                    Nearest Mar del Plata's modern cruise ship port are the Chica and Grande beaches
+                                    (they're also popular among sea lions, many of which hang out in the waters around
+                                    the city's fishing wharves).
+                                </P>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                    <P class="name">chile </P>
+                    <br><br>
+                    <button class="button1" id="slideL">
+                        < </button>
+                            <button type="button" class="button2" id="slideR">></button>
+
+                            <div class="mydiv" id="divv2">
+                                <div class="content2">
+                                    <diV class="div">
+                                        <img class="img" src="easter-island.jpg">
+                                        <p class="head"> Easter Island & Rapa Nui National Park</p>
+                                        <p class="parag"> First visited by Europeans in 1722, the magnificent yet remote
+                                            Easter Island-so named by a Dutch Explorer who first set eyes on it on
+                                            Easter Sunday- has been inhabited for thousands of years by Polynesians.
+                                            Despite being more than 3,500 kilometers away from mainland Chile, this
+                                            fascinating island with its remarkable stone sculptures remains the
+                                            country's most recognizable attraction.</p>
+                                    </diV>
+                                    <div class="div">
+                                        <img class="img" src="valle-de-la-luna.jpg">
+                                        <P class="head"> Valle de la Luna and the Atacama Desert</P>
+                                        <P class="parag"> Valle de la Luna, which literally translates as "Valley of the
+                                            Moon," lies 13 kilometers west of San Pedro de Atacama at the north end of
+                                            the country, near its border with Bolivia, and can be accessed via
+                                            well-marked bike trails, tour buses, or self-drive car rentals.
+
+                                            This rugged, inhospitable looking landscape in the heart of the Atacama
+                                            Desert attracts many visitors for its eerie resemblance to the surface of
+                                            the moon.</P>
+                                    </div>
+                                    <div class="div">
+                                        <img class="img" src="santiago.jpg">
+                                        <P class="head"> Santiago</P>
+                                        <P class="parag"> Santiago is not only the financial and business capital of
+                                            Chile, it also serves as the country's cultural and entertainment
+                                            center and is home to endless fun things to do, including visiting its best
+                                            museums and galleries, along with excellent shopping, dining, and hotel
+                                            options.
+                                            Centrally located and the country's main transportation hub, Santiago is
+                                            where most visitors begin their Chilean travels before heading to the Andes
+                                            or other areas of outstanding natural beauty, such as Easter Island. </P>
+                                    </div>
+                                    <div class="div">
+                                        <img class="img" src="the chilean lake district.jpg">
+                                        <p class="head">The Chilean Lake District </p>
+                                        <P class="parag"> Stretching for more than 330 kilometers from Temuco to Puerto
+                                            Montt and resembling the alpine regions of Europe, the Chilean Lake District
+                                            (Zona Sur) is well worth exploring. Like its alpine cousin, this beautiful
+                                            region of the Andean foothills boasts rich farmland at the base of its many
+                                            snowcapped volcanoes, ringed by thick forests and the kind of deep lakes
+                                            that water sports enthusiasts drool over.
+                                            For adventure seekers, Chilean Lake District itinerary includes endless
+                                            hiking and biking potential </P>
+                                    </div>
+                                    <div class="div">
+                                        <img class="img" src="island-national-park.jpg">
+                                        <P class="head"> Chiloé Island & Chiloé National Park</P>
+                                        <P class="parag"> Situated on Chiloé Island, the country's second largest
+                                            island, Chiloé National Park is well worth adding to your travel itinerary.
+                                            While not as rugged as the majority of the country's most striking scenery,
+                                            Chiloé Island is nevertheless quite unique.
+
+                                            In places, it looks not unlike the kind of rural topography you'd expect to
+                                            find in parts of Europe-Germany immediately springs to mind-and it's a
+                                            delight to explore. </P>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                            <P class="name">Peru </P>
+                            <br><br>
+                            <button class="button1" id="slide">
+                                < </button>
+                                    <button type="button" class="button2" id="back">></button>
+                                    <div class="mydiv" id="divv3">
+                                        <div class="content2">
+                                            <div class="div">
+                                                <img class="img" src="historical-city-center.jpg">
+                                                <p class="head"> Arequipa's Historical City Center</p>
+                                                <P class="parag"> Arequipa, at more than 2,300 meters, is often regarded
+                                                    as Peru's most beautiful city. Set against a backdrop of snow-capped
+                                                    mountains, the city center is a designated UNESCO World Heritage
+                                                    Site. Arequipa's main claim to fame is the old architecture
+                                                    constructed of sillar stone, a volcanic rock that radiates a bright
+                                                    color in the sunlight. Most of the colonial buildings in the
+                                                    historic city center are made from this stone, giving rise to its
+                                                    nickname of the "white city."</P>
+                                            </div>
+                                            <div class="div">
+                                                <img class="img" src="puerto-maldonado.jpg">
+                                                <p class="head"> Puerto Maldonado</p>
+                                                <P class="parag"> Puerto Maldonado is a key jumping-off point for tours
+                                                    of the Amazon. This is a completely different experience than what
+                                                    you will find in other parts of Peru, with hot humid jungle and a
+                                                    chance to see all kinds of unique wildlife. Caimans, capybara,
+                                                    parrots, and piranhas are what you can expect to find in this part
+                                                    of the country.
+                                                    The Reserva Nacional Tambopata and the Parque Nacional Bahuaja
+                                                    Sonene are the two main attractions, and they are well serviced by a
+                                                    number of jungle lodges.
+                                                </P>
+                                            </div>
+                                            <div class="div">
+                                                <img class="img" src="cusco's architectural treasures.jpg">
+                                                <p class="head"> Cusco's Architectural Treasures</p>
+                                                <P class="parag"> Walking through the streets of Cusco is like wandering
+                                                    through a museum, with history built upon history in this UNESCO
+                                                    World Heritage Site. Inca ruins have been used in the foundations of
+                                                    many of the lovely old colonial buildings lining the narrow roads,
+                                                    showcasing the city's long history.
+
+                                                    The main square, Plaza de Armas, in the city center is home to the
+                                                    Cathedral and La Compania, two equally impressive structures. </P>
+                                            </div>
+                                            <div class="div">
+                                                <img class="img" src="lake-titicaca.jpg">
+                                                <p class="head"> Lake Titicaca</p>
+                                                <P class="parag"> The sparkling blue water of Lake Titicaca is
+                                                    surrounded by rolling hills and traditional small villages. The lake
+                                                    area is a mix of beautiful scenery and culture that sets it apart
+                                                    from other regions of the country. Sitting at 3,820 meters above sea
+                                                    level, Lake Titicaca is known for being the highest navigable lake
+                                                    in the world.
+
+                                                    A boat trip to the islands and surrounding villages is the best way
+                                                    to appreciate the lake.One of the main tourist attractions is the
+                                                    Uros Floating Islands (Islas Flotantes), which sustain small
+                                                    communities of Uros Indians.</P>
+                                            </div>
+                                            <div class="div">
+                                                <img class="img" src="machu-picchu.jpg">
+                                                <P class="head"> Machu Picchu</P>
+                                                <P class="parag"> Perched high upon a ridge, 300 meters above the
+                                                    Urubamba River, the majestic Inca City of Machu Picchu is one of the
+                                                    most dramatic settings of a ruined city anywhere in the world.
+                                                    Almost as impressive as the ruins themselves is the spectacular
+                                                    backdrop of steep, lush, and often cloud-shrouded mountains.
+
+                                                    Standing near the caretaker's hut, looking out over Machu Picchu,
+                                                    the jungle-covered mountains, and the river far below, you can
+                                                    imagine why the Incas chose this place to build their city.</P>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                    <span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                    <P class="name">Colombia </P>
+                                    <br><br>
+                                    <button class="button1" id="goleft">
+                                        < </button>
+                                            <button type="button" class="button2" id="goright">></button>
+                                            <div class="mydiv" id="divv4">
+                                                <div class="content2">
+                                                    <div class="div">
+                                                        <img class="img" src="cartagena.jpg">
+                                                        <P class="head"> Cartagena</P>
+                                                        <P class="parag"> Cartagena is the crown jewel of Colombia's
+                                                            Caribbean coast and one of the best-preserved colonial
+                                                            destinations in the Americas.
+
+                                                            Maybe it's the 13 kilometers of centuries-old walls, or the
+                                                            colorful colonial architecture, many of which are now
+                                                            beautifully restored restaurants and luxury hotels. Perhaps
+                                                            it's the bougainvillea-covered balconies along the
+                                                            labyrinthine streets
+                                                            or the soaring Catholic churches that tower above every
+                                                            plaza. Whatever it is, visitors can't help but fall for this
+                                                            Caribbean charmer.</P>
+                                                    </div>
+                                                    <div class="div">
+                                                        <img class="img" src="medellin.jpg">
+                                                        <P class="head"> Medellin </P>
+                                                        <p class="parag"> Bogotá might be the Colombian capital, but
+                                                            it's the smaller and more manageable city of Medellin that
+                                                            tends to capture the hearts of visitors. Medellin was dubbed
+                                                            the most dangerous
+                                                            city in the world in the early 1990s, but a quarter of a
+                                                            century later, it has earned a reputation for something
+                                                            entirely different: innovation.
+
+                                                            The city boasts cable cars linking the settlements in its
+                                                            hills to a modern metro system in the valley below, a
+                                                            greenbelt of lush "eco parks," and striking libraries and
+                                                            community centers.</p>
+                                                    </div>
+                                                    <div class="div">
+                                                        <img class="img" src="eje-cafetero.jpg">
+                                                        <P class="head"> Eje Cafetero </P>
+                                                        <P class="parag"> The world's third-largest producer of coffee
+                                                            beans, Colombia is a fantastic country for tastings and
+                                                            tours. The vast majority of production takes place in the
+                                                            subtropical Andean hills west of Bogota between the small
+                                                            cities of Armenia
+                                                            , Pereira, and Manizales. This region, known as the Eje
+                                                            Cafetero (or Coffee Axis), is home to a
+                                                            growing number of coffee plantations that have opened up
+                                                            their operations to the public in recent years for tours,
+                                                            tastings, and lavish farm stays.</P>
+                                                    </div>
+                                                    <div class="div">
+                                                        <img class="img" src="the lost city.jpg">
+                                                        <P class="head"> The Lost City </P>
+                                                        <P class="parag">Colombia's most popular hike is undoubtedly the
+                                                            four-day, 44-kilometer trek to Ciudad Perdida, a lost city
+                                                            hidden deep in the Sierra Nevada de Santa Marta mountains
+                                                            that was only rediscovered in the 1970s.
+                                                            this ancient city is said to be one of the largest
+                                                            pre-Columbian settlements discovered in the Americas.
+                                                            Much of the site remains buried beneath a thick jungle quilt
+                                                            the modern indigenous inhabitants of the area have banned
+                                                            excavations. </P>
+                                                    </div>
+                                                    <div class="div">
+                                                        <img class="img" src="providencia-island.jpg">
+                                                        <p class="head">Providencia Island</p>
+                                                        <P class="parag">This quirky Caribbean Island leaves many
+                                                            first-time visitors perplexed. For starters, it's far closer
+                                                            to Nicaragua than Colombia. Then there's the fact that its
+                                                            residents don't speak Spanish but rather an English Creole.
+                                                            Of course, none of that really matters when you find
+                                                            yourself sunning on the most stunning beaches under the
+                                                            Colombian flag.
+
+                                                            Little more than a dollop of golden sands and perky palms,
+                                                            this isolated island is the jewel of the UNESCO-protected
+                                                            Seaflower Biosphere Reserve . </P>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <script>
+                                                var button = document.getElementById('slideRight');
+                                                button.onclick = function () {
+                                                    var container = document.getElementById('mydiv');
+                                                    sideScroll(container, 'right', 25, 100, 10);
+                                                };
+
+                                                var back = document.getElementById('slideLeft');
+                                                back.onclick = function () {
+                                                    var container = document.getElementById('mydiv');
+                                                    sideScroll(container, 'left', 25, 100, 10);
+                                                };
+
+
+
+                                                var button = document.getElementById('right');
+                                                button.onclick = function () {
+                                                    var container = document.getElementById('divv');
+                                                    sideScroll(container, 'right', 25, 100, 10);
+                                                };
+
+                                                var back = document.getElementById('left');
+                                                back.onclick = function () {
+                                                    var container = document.getElementById('divv');
+                                                    sideScroll(container, 'left', 25, 100, 10);
+                                                };
+
+
+                                                var button = document.getElementById('slideR');
+                                                button.onclick = function () {
+                                                    var container = document.getElementById('divv2');
+                                                    sideScroll(container, 'right', 25, 100, 10);
+                                                };
+
+                                                var back = document.getElementById('slideL');
+                                                back.onclick = function () {
+                                                    var container = document.getElementById('divv2');
+                                                    sideScroll(container, 'left', 25, 100, 10);
+                                                };
+
+                                                function sideScroll(element, direction, speed, distance, step) {
+                                                    scrollAmount = 0;
+                                                    var slideTimer = setInterval(function () {
+                                                        if (direction == 'left') {
+                                                            element.scrollLeft -= step;
+                                                        } else {
+                                                            element.scrollLeft += step;
+                                                        }
+                                                        scrollAmount += step;
+                                                        if (scrollAmount >= distance) {
+                                                            window.clearInterval(slideTimer);
+                                                        }
+                                                    }, speed);
+                                                }
+
+
+                                                var button = document.getElementById('back');
+                                                button.onclick = function () {
+                                                    var container = document.getElementById('divv3');
+                                                    sideScroll(container, 'right', 25, 100, 10);
+                                                };
+
+                                                var back = document.getElementById('slide');
+                                                back.onclick = function () {
+                                                    var container = document.getElementById('divv3');
+                                                    sideScroll(container, 'left', 25, 100, 10);
+                                                };
+
+                                                var button = document.getElementById('goright');
+                                                button.onclick = function () {
+                                                    var container = document.getElementById('divv4');
+                                                    sideScroll(container, 'right', 25, 100, 10);
+                                                };
+
+                                                var back = document.getElementById('goleft');
+                                                back.onclick = function () {
+                                                    var container = document.getElementById('divv4');
+                                                    sideScroll(container, 'left', 25, 100, 10);
+                                                };
+
+
+
+
+                                            </script>
+</body>

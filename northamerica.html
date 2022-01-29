@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> North America </title>
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="africa.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(#131241, #41125A);
+            overflow-x: hidden;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        header ul li a:hover,
+        header ul li a.num1 {
+            background: #fff;
+            color: #131241
+        }
+
+        .na h2 {
+            color: #fff;
+            position: relative;
+            padding-bottom: 900px;
+
+            padding-left: 50px;
+            font-size: 30px;
+
+        }
+
+        .container {
+            position: relative;
+            width: 1100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 150px;
+        }
+
+        .container .card {
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            background: #fff;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+            transition: 0.3s ease-in-out;
+        }
+
+        .container .card:hover {
+            height: 420px;
+        }
+
+        .container .card .imgbx {
+            position: relative;
+            width: 260px;
+            height: 260px;
+            top: -60px;
+            left: 20px;
+            z-index: 1;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .container .card .imgbx img {
+            max-width: 100%;
+            height: 265px;
+            border-radius: 4px;
+        }
+
+        .container .card .content {
+            position: relative;
+            margin-top: -140px;
+            padding: 10px 15px;
+            text-align: center;
+            color: #111;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .container .card:hover .content {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -40px;
+            transition-delay: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="logo">Tall tale travel </a>
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="countries.html" class="num1">discover</a></li>
+
+            <li><a href="aboutus.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </header>
+
+    <div class="na">
+        <h2></h2>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="imgbx">
+                <img src="WaileaHawaii.jpg">
+            </div>
+            <div class="content">
+                <h2>Wailea, Hawaii</h2>
+                <p> What is the best North American island vacation? Well, it’s a city so nice, you chose it twice.
+                    Wailea, apparently, is never the bridesmaid, always the bride. Blessed with five stunning
+                    crescent-shaped beaches, luxuriously stylish resorts, and nearby Ahihi-Kinau Natural Area Reserve.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="CambriaCalifornia.jpg">
+            </div>
+            <div class="content">
+                <h2>Cambria, California</h2>
+                <p> Sitting on arguably the prettiest stretch of coastal land in California, Cambria is an idyllic
+                    little town amongst immense beauty. Reflecting such merit
+                    Often serving as home base for those traveling to Hearst
+                    Castle, Cambria has plenty of its own charms to explore!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="SpringdaleUtah.jpg">
+            </div>
+            <div class="content">
+                <h2>Springdale, Utah</h2>
+                <p>Springdale attracts visitors who like adventure, beauty, and the great outdoors. This is the place to
+                    stay when exploring Zion National Park to catch sight of the blushing hues of sandstone cliffs. </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="QuebecCityQuebec.jpg">
+            </div>
+            <div class="content">
+                <h2>Quebec City, Quebec</h2>
+                <p> One of the most beautiful cities in the world, Quebec City beckons travelers with historical sites,
+                    captivating views, and rich cultural features. Walk along Dufferin Terrace to ogle Château Frontenac
+                    and historic battlefields. Architecture and history buffs will love Place Royale, the spot where the
+                    city was founded.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="AshlandOregon.jpg">
+            </div>
+            <div class="content">
+                <h2>Ashland, Oregon</h2>
+                <p> In close proximity to the Rogue River—and hosting world-class theater and the phenomenal Shakespeare
+                    Festival—Ashland appeals to art lovers and outdoor enthusiasts alike. Round out a day of trail
+                    running, river rafting, or skiing with asparagus dumpling soup or smoked brisket with chili sauce at
+                    Tot. </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="ma.jpg">
+            </div>
+            <div class="content">
+                <h2> Calgary, Alberta</h2>
+                <p> Travelers flock to Calgary for its annual events like the Calgary Stampede, dubbed “The Greatest
+                    Outdoor Show on Earth.” Whatever your tastes, Calgary has something incredible for you—from the
+                    Calgary Folk Music Festival to The Big Taste. Nature is ever-present, too, in the many city parks
+                    and, of course, nearby national park superstar, Banff. </p>
+            </div>
+        </div>
+
+
+    </div>
+    <br><br><br>
+
+</body>
+
+</html>

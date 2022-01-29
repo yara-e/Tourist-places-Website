@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Africa </title>
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="africa.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /*display: flex;*/
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(#131241, #41125A);
+            overflow-x: hidden;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        header ul li a:hover,
+        header ul li a.num1 {
+            background: #fff;
+            color: #131241
+        }
+
+        .na h2 {
+            color: #fff;
+            position: relative;
+            /*  padding-bottom: 900px;*/
+            padding-left: 50px;
+            font-size: 30px;
+
+        }
+
+        .container {
+            position: relative;
+            width: 1100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 150px;
+        }
+
+        .container .card {
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            background: #fff;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+            transition: 0.3s ease-in-out;
+        }
+
+        .container .card:hover {
+            height: 420px;
+        }
+
+        .container .card .imgbx {
+            position: relative;
+            width: 260px;
+            height: 260px;
+            top: -60px;
+            left: 20px;
+            z-index: 1;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .container .card .imgbx img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        .container .card .content {
+            position: relative;
+            margin-top: -140px;
+            padding: 10px 15px;
+            text-align: center;
+            color: #111;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .container .card:hover .content {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -40px;
+            transition-delay: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Tall tale travel</a>
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="countries.html" class="num1">discover</a></li>
+
+            <li><a href="aboutus.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </header>
+    <div class="na">
+        <h2>Africa</h2>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="imgbx">
+                <img src="sharm1.jpg">
+            </div>
+            <div class="content">
+                <h2>Sharm Elsheikh</h2>
+                <p> Sharm el-Sheikh is an Egyptian resort town between the desert of the Sinai Peninsula and the Red
+                    Sea. It's known for its sheltered sandy beaches, clear waters and coral reefs. </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="luxor.jpg">
+            </div>
+            <div class="content">
+                <h2>Luxor</h2>
+                <p> Luxor is a city on the east bank of the Nile River in southern Egypt. It's on the site of ancient
+                    Thebes, the pharaohs’ capital at the height of their power </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="egypt1.jpg">
+            </div>
+            <div class="content">
+                <h2>Egyptian pyramids</h2>
+                <p> The Great Sphinx of Giza, commonly referred to as the Sphinx of Giza or just the Sphinx, is a
+                    limestone statue of a reclining sphinx </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="mor.jpg">
+            </div>
+            <div class="content">
+                <h2>Marrakesh</h2>
+                <p> Marrakesh, a former imperial city in western Morocco, is a major economic center and home to
+                    mosques, palaces and gardens. The medina is a densely packed, walled medieval city dating to the
+                    Berber Empire </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="lion.png">
+            </div>
+            <div class="content">
+                <h2>lion's Head</h2>
+                <p> Lion's Head is an active investor and fund manager. We are the authorised manager of four pioneering
+                    funds, including the African Local Currency Bond Fund </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="ma.jpg">
+            </div>
+            <div class="content">
+                <h2>mauritius</h2>
+                <p> Mauritius, an Indian Ocean island nation, is known for its beaches, lagoons and reefs. </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="aswan.jpg">
+            </div>
+            <div class="content">
+                <h2>Aswan</h2>
+                <p> Aswan, a city on the Nile River, has been southern Egypt’s strategic and commercial gateway since
+                    antiquity. It contains significant archaeological sites like the Philae temple complex </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="mad.jpg">
+            </div>
+            <div class="content">
+                <h2>madgascar</h2>
+                <p> Madagascar, officially the Republic of Madagascar, and previously known as the Malagasy Republic, is
+                    an island country in the Indian Ocean </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

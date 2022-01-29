@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> contact us </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @import url('http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+            background: linear-gradient(#131241, #41125A);
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 900px;
+            margin-top: -35px;
+        }
+
+        header ul li {
+            list-style: none;
+            margin-left: 10px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        header ul li a:hover,
+        header ul li a.num1 {
+            background: #fff;
+            color: #131241
+        }
+
+        .contacts h1 {
+            text-align: center;
+            color: #fff;
+            margin-top: 130px;
+        }
+
+        .border {
+            width: 100px;
+            height: 5px;
+            background: #FFDCAD;
+            position: absolute;
+            margin: 180px 240px;
+        }
+
+        .contacts {
+            max-width: 600px;
+            margin: auto;
+            padding: 0 10px;
+            overflow: hidden;
+        }
+
+        .contact-form-text {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 16px 0;
+            border: 0;
+            background: #F29B6B;
+            opacity: 80%;
+            padding: 20px 40px;
+            outline: none;
+            color: hsl(180, 44%, 77%);
+            transition: 0.5s;
+        }
+
+        .contact-form-text:focus {
+            box-shadow: 0 0 10px 4px #D02142;
+        }
+
+        textarea.contact-form-text {
+            resize: none;
+            height: 120px;
+        }
+
+        .contact-form-btn {
+            float: right;
+            border: 0;
+            background: #FFDCAD;
+            color: #000;
+            padding: 12px 50px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .contact-form-btn:hover {
+            background: #fff;
+        }
+
+        .footer-dark {
+            padding: 50px 0;
+            color: #f0f9ff;
+            background-color: #282d32;
+        }
+
+        .footer-dark h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer-dark ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer-dark ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+        .footer-dark ul a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item:not(.social) {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+
+        .footer-dark .item.text {
+            margin-bottom: 36px;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item.text {
+                margin-bottom: 0;
+            }
+        }
+
+        .footer-dark .item.text p {
+            opacity: 0.6;
+            margin-bottom: 0;
+        }
+
+        .footer-dark .item.social {
+            text-align: center;
+        }
+
+        @media (max-width:991px) {
+            .footer-dark .item.social {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .footer-dark .item.social>a {
+            font-size: 20px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+            margin: 0 8px;
+            color: #fff;
+            opacity: 0.75;
+        }
+
+        .footer-dark .item.social>a:hover {
+            opacity: 0.9;
+        }
+
+        .footer-dark .copyright {
+            text-align: center;
+            padding-top: 24px;
+            opacity: 0.3;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="logo">Tall tale travel</a>
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="countries.html">discover</a></li>
+
+            <li><a href="aboutus.html">about</a></li>
+            <li><a href="contact.html" class="num1">contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </header>
+    <div class="contacts">
+        <div class="border"></div>
+        <h1>Contact us</h1>
+        <form class="contact-form" action="contact.html" method="post">
+            <input type="text" class="contact-form-text" placeholder="Your name">
+            <input type="email" class="contact-form-text" placeholder="Your E-mail">
+            <input type="text" class="contact-form-text" placeholder="Phone number">
+            <textarea class="contact-form-text" placeholder="Your message"></textarea>
+            <input type="submit" class="contact-form-btn" value="send">
+        </form>
+    </div>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Page Content</h3>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="countries.html">Discover</a></li>
+                           
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Countries</h3>
+                        <ul>
+                            <li><a href="asia.html">Asia</a></li>
+                            <li><a href="africa.html">Africa</a></li>
+                            <li><a href="europe.html">europe</a></li>
+                            <li><a href="south.html">south america</a></li>
+                            <li><a href="northamerica.html">north america</a></li>
+                            <li><a href="australia.html">australia</a></li>
+                            <li><a href="index.html">antarctica</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>TTT ( Tall Tale Travel ) </h3>
+                        <p>Travel quotes are there to express the feeling you experienced while traveling. Combine the
+                            best travel quotes with the power of an image and instantly let people have a taste of your
+                            travel feelings. This collection of travel quotes is made to inspire and motivate you and
+                            others to pack your bags and go explore! Or simply to add as a travel caption under your
+                            brand new Instagram post or to pin to your Pinterest. Also, read our adventure quotes to
+                            spark your wanderlust!
+                        </p>
+                    </div>
+                    <div class="col item social">
+                        <a href="https://www.facebook.com/groups/1637368469877009"><i
+                                class="icon ion-social-facebook"></i></a>
+                        <a href="https://twitter.com/UrTravelHelper"><i class="icon ion-social-twitter"></i></a>
+                        <a href="https://www.instagram.com/travel.egypt/"><i class="icon ion-social-instagram"></i></a>
+                    </div>
+                </div>
+                <p class="copyright">TTT © 2018</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
